@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>Регистрация</h2>
+  <form action="/register" method="post">
+    <label for="username">Ім'я користувача:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Зареєструватися</button>
+  </form>
+</body>
+</html>
+
+//2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>Вход</h2>
+  <form action="/login" method="post">
+    <label for="username">Ім'я користувача:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Увійти</button>
+  </form>
+</body>
+</html>
+
+//3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>Спитати нас</h2>
+  <form action="/ask" method="post">
+    <label for="question">Ваше питання:</label>
+    <textarea id="question" name="question" rows="4" required></textarea>
+
+    <button type="submit">Відправити питання на розгляд</button>
+  </form>
+</body>
+</html>
+
+//4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+  <h2>Зробити замовлення</h2>
+  <form action="/order" method="post">
+    <label for="product">Оберіть товар:</label>
+    <select id="product" name="product" required>
+      <option value="product1">Товар 1</option>
+      <option value="product2">Товар 2</option>
+      <option value="product3">Товар 3</option>
+    </select>
+
+    <label for="quantity">Кількість:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <button type="submit">Замовити</button>
+  </form>
+</body>
+</html>
+
+
